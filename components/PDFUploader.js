@@ -29,11 +29,12 @@ const PDFUploader = () => {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({ pdfUrl }),
+          duplex: true,
         });
-        
-        console.log("Response: ", response);
+
         if (!response.ok) {
-          throw new Error('Failed to upload PDF. Please try again.');
+            const errorMessage = await response.json();
+            throw new Error(`Failed to upload PDF: ${errorMessage.error}`);
         }
   
         const data = await response.json();
