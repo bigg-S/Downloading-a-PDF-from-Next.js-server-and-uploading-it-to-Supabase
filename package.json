@@ -1,0 +1,37 @@
+{
+  "name": "downloading-a-pdf-from-next.js-server-and-uploading-it-to-supabase",
+  "version": "1.0.0",
+  "description": "Downloading pdf from next.js server and uploading it to suapbase",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm run test",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigg-S/Downloading-a-PDF-from-Next.js-server-and-uploading-it-to-Supabase.git"
+  },
+  "keywords": [
+    "Supabase",
+    "Next.js"
+  ],
+  "author": "Stephen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigg-S/Downloading-a-PDF-from-Next.js-server-and-uploading-it-to-Supabase/issues"
+  },
+  "homepage": "https://github.com/bigg-S/Downloading-a-PDF-from-Next.js-server-and-uploading-it-to-Supabase#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "dotenv": "^16.4.5",
+    "next": "^14.1.3",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
